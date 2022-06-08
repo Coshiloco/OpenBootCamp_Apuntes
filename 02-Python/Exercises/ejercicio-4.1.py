@@ -1,6 +1,6 @@
-edad = input("Escribe tu edad")
+edad: int = input('Hola Usuario, introduce tu edad: ')
 
-if float(edad) >= 18:
-    print("Eres mayor de edad")
+if int(edad) < 18:
+    print('Eres menor de edad')
 else:
-    print("Todavia tienes que crecer un poco")
+    print('Eres Mayor de edad')
