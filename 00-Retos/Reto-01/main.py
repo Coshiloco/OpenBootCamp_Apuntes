@@ -1,14 +1,9 @@
 import pandas as pds
-import pprint
 
-from pandas import DataFrame
+df = pds.read_excel("contacts.xlsx", sheet_name=None, usecols="A,K")
 
-dfs = pds.read_excel("contacts.xlsx", sheet_name=None, usecols="A,K")
+full_list = df.get("100-contacts")
 
-dataframe = dfs.get("100-contacts")  # type: DataFrame
+emails = full_list['email'].unique()
 
-nombre = input("Introduce el nombre a buscar:")
-
-resultado = dataframe[dataframe.first_name == nombre]
-
-print(resultado.email)
+print(emails)
