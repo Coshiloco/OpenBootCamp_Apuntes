@@ -19,6 +19,7 @@ class Vehiculo:
     def getNombre(self):
         return self.nombre
 
+
 def main():
 
     v = Vehiculo('Porsche', 3600, 450, 'Gasolina')
