@@ -1,3 +1,5 @@
+# Escribe una función que pueda decirte si un número (número entero) es primo o no.
+
 def esPrimo(num):
     if type(num) == float:
         print("No es un numero entero")

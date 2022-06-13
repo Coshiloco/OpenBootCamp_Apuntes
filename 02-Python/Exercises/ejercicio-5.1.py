@@ -1,3 +1,6 @@
+# Escribe una función que calcule el área de un triángulo, recibiendo la altura y la base como parámetros y
+# otra función que calcule el área de un círculo recibiendo el radio del mismo.
+
 def areatriangulo(altura, base):
     area = altura * base / 2
     print(area)
