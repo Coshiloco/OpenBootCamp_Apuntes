@@ -6,16 +6,13 @@ listaPaises = []
 
 while True:
     pais = input("Introduce un pais, para continuar deja el espacio vacio: ")
-
     if pais:
         listaPaises.append(pais)
         continue
-
     if not pais:
         break
 
 
 filtered = set(listaPaises)
 sortedList = sorted(filtered)
-
 print(sortedList)
