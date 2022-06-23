@@ -1,0 +1,42 @@
+<!-- 
+Crea un nuevo documento HTML con el título "Disposición de elementos en CSS"
+    Crea un nuevo fichero CSS e impórtalo en el documento HTML principal
+    Utiliza la disposición flex-box para crear una galería de 6 imágenes con los siguientes parámetros
+        Las imágenes deben tener 300 píxeles de ancho
+        Deben reagruparse (wrap) cuando el ancho del viewport cambia
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disposición de elementos en CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .galeria {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .imagen-galeria {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="galeria">
+        <img class="imagen-galeria" src="img/imagen1.png" alt="imagen1" >
+        <img class="imagen-galeria" src="img/imagen2.png" alt="imagen2" >
+        <img class="imagen-galeria" src="img/imagen3.png" alt="imagen3" >
+        <img class="imagen-galeria" src="img/imagen4.png" alt="imagen4" >
+        <img class="imagen-galeria" src="img/imagen5.png" alt="imagen5" >
+        <img class="imagen-galeria" src="img/imagen6.png" alt="imagen6" >
+    </div>
+</body>
+</html>
